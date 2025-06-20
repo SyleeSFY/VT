@@ -2,10 +2,11 @@
     background-color: green;
     height: 40px;
     width: 100%;
-      margin: 0;
-  padding: 0;
+    margin: 0;
+    padding: 0;
 }
-/* 
-body {
 
-} */
+.NavBarIMG {
+    width: 77px;
+    height: 60px;
+}
