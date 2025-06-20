@@ -1,4 +1,11 @@
-.NavBar{
+.NavBar {
     background-color: green;
-    height: 30px;
+    height: 40px;
+    width: 100%;
+      margin: 0;
+  padding: 0;
 }
+/* 
+body {
+
+} */
