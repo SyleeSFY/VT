@@ -13,7 +13,7 @@ body, html, nav, div, p, ul, h1, h2, h3 {
 }
 .container {
   width: 100%;
-  max-width: 1600px;
+  max-width: 1400px;
   margin: 0 auto;
   padding: 0 15px;
   box-sizing: border-box;

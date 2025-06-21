@@ -6,10 +6,13 @@ const Nav = () => {
         <div className='NavBar'>
             <img src={NavBarImage} alt="Navigation Bar" className='NavBarIMG' />
             <div className='NavMenu'>
+                <ul>
                 <li>О КАФЕДРЕ</li>
                 <li>АБИТУРЕНТАМ</li>
                 <li>СТУДЕНТАМ</li>
                 <li>КОНТАКТЫ</li>
+                </ul>
+
             </div>
         </div>
     )
