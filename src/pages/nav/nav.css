@@ -4,9 +4,21 @@
     width: 100%;
     margin: 0;
     padding: 0;
+    display: flex;
+
 }
 
 .NavBarIMG {
-    width: 77px;
-    height: 60px;
+
+    width: 40px;
+    height: 30px;
+    margin-top: auto;
+    margin-bottom: auto;
+    padding-left: 170px;
+}
+.NavMenu{
+    margin-left: 90px;
+}
+li{
+    display: inline-block;
 }

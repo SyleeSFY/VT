@@ -20,7 +20,7 @@ body, html, nav, div, p, ul, h1, h2, h3 {
   position: relative; 
 }
 .containerBg {
-  background-color: rgba(0,255,85, 0.05);
+  background-color: rgba(0,255,85, 0.08);
   width: 100%;
   min-height: 100%;
   position: absolute;

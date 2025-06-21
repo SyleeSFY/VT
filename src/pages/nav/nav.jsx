@@ -1,8 +1,16 @@
-import './nav.css'; // Путь относительно расположения файла
+import './nav.css';
+import NavBarImage from './NavBarIMG.png'; // Импортируем изображение
+
 const Nav = () => {
-    return(
+    return (
         <div className='NavBar'>
-            <img src='src/components/Icons/NavBarIMG.png' alt="" className='NavBarIMG'/>
+            <img src={NavBarImage} alt="Navigation Bar" className='NavBarIMG' />
+            <div className='NavMenu'>
+                <li>О КАФЕДРЕ</li>
+                <li>АБИТУРЕНТАМ</li>
+                <li>СТУДЕНТАМ</li>
+                <li>КОНТАКТЫ</li>
+            </div>
         </div>
     )
 }
