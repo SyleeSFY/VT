@@ -1,25 +1,76 @@
-.home{
+.home {
     padding-top: 80px;
 }
-.InfoCafedra{
-    padding-left: 70px;
+
+.InfoCafedra {
+    padding-left: 30px;
     margin-top: auto;
     margin-bottom: auto;
 }
+
 .CafedraCard {
     display: flex;
     margin-bottom: 40px;
-    align-items: center; /* Вертикальное выравнивание по центру */
+    align-items: center;
 }
-.CafedraCard > p {
-    
+
+.CafedraCard>p {
+
     margin-left: 20px;
-        font-family: "Roboto", sans-serif;
+    font-family: "Roboto", sans-serif;
     font-size: 20px;
 }
 
-.Stick{
-    height: 55PX;
-    width: 3PX;
+.Stick {
+    width: 3px;
+    height: 55px;
     background-color: #009639;
+    flex-shrink: 0;
+}
+
+.Stip {
+    margin-left: auto;
+    margin-right: auto;
+    height: 3px;
+    width: 600px;
+    background-color: #009639;
+    box-sizing: border-box;
+}
+
+/* OurGraduates */
+
+.OurGraduates {
+
+    margin-top: 40px;
+}
+
+.OurGraduatesFlexEnd {
+    display: flex;
+    justify-content: flex-end;
+}
+
+.BlockTittleOurGraduates {
+    box-sizing: border-box;
+    padding-right: 40px;
+}
+
+.TittleOurGraduates {
+    font-family: Rubik;
+    font-weight: 400;
+    font-size: 48px;
+    line-height: 100%;
+    letter-spacing: 0%;
+}
+
+.OurGraduatesInfo {
+    display: flex;
+    justify-content: space-between;
+    margin-top: 20px;
+}
+
+.OurGraduatesInfoIMG {
+    width: 530px;
+    height: 410px;
+    top: 793px;
+    left: 179px;
 }
