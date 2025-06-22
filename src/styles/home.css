@@ -1,0 +1,25 @@
+.home{
+    padding-top: 80px;
+}
+.InfoCafedra{
+    padding-left: 70px;
+    margin-top: auto;
+    margin-bottom: auto;
+}
+.CafedraCard {
+    display: flex;
+    margin-bottom: 40px;
+    align-items: center; /* Вертикальное выравнивание по центру */
+}
+.CafedraCard > p {
+    
+    margin-left: 20px;
+        font-family: "Roboto", sans-serif;
+    font-size: 20px;
+}
+
+.Stick{
+    height: 55PX;
+    width: 3PX;
+    background-color: #009639;
+}

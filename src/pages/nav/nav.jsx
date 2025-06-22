@@ -1,43 +1,37 @@
-import './nav.css';
-import NavBarImage from './NavBarIMG.png';
+import '../../styles/nav.css';
+import NavBarImage from '../../components/Icons/NavBarIMG.png';
 
 const Nav = () => {
     return (
         <nav className='NavBar'>
-            <img src={NavBarImage} alt="Navigation Bar" className='NavBarIMG' />
-            <div className='NavMenu'>
+            <img src={NavBarImage} alt="Логотип кафедры" className='NavBarIMG' />
+            <nav className='NavMenu'>
                 <ul className='Navli'>
-                    <li>
+                    <li className='NavItem Cursor'>
                         О КАФЕДРЕ
-                        <ul className='PodL'>
-                            <li>Подпункт 1</li>
-                            <li>Подпункт 2</li>
-                        </ul>
                     </li>
-                    <li>
+                    <li className='NavItem NonCursor'>
                         АБИТУРЕНТАМ
-                        <ul className='PodL'>
+                        <ul className='secondNav Cursor'>
                             <li>Подпункт 1</li>
                             <li>Подпункт 2</li>
                         </ul>
                     </li>
-                    <li>
+                    <li className='NavItem NonCursor'>
                         СТУДЕНТАМ
-                        <ul className='PodL'>
+                        <ul className='secondNav Cursor'>
                             <li>Подпункт 1</li>
                             <li>Подпункт 2</li>
                         </ul>
                     </li>
-                    <li>
+                    <li className='NavItem Cursor'>
                         КОНТАКТЫ
-                        <ul className='PodL'>
-                            <li>Подпункт 1</li>
-                            <li>Подпункт 2</li>
-                        </ul>
+
                     </li>
                 </ul>
-            </div>
-        </nav>
+            </nav>
+        </nav >
     )
 }
+
 export default Nav;

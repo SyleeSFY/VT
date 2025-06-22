@@ -1,0 +1,134 @@
+
+.NavBar {
+    background-color: #2e7d32;
+    height: 60px;
+    width: 100%;
+    display: flex;
+    align-items: center;
+    padding: 0 20px;
+    box-sizing: border-box;
+}
+
+.NavBarIMG {
+    height: 40px;
+    width: auto;
+    margin-right: 40px;
+}
+
+.NavMenu {
+    flex-grow: 1;
+    height: 100%;
+}
+
+.Navli {
+    display: flex;
+    list-style: none;
+    margin: 0;
+    padding: 0;
+    height: 100%;
+}
+
+.NavItem {
+    position: relative;
+    color: white;
+    font-family: "Roboto", sans-serif;
+    font-size: 18px;
+    font-weight: 500;
+    padding: 0 20px;
+    display: flex;
+    align-items: center;
+    height: 100%;
+    transition: background-color 0.3s;
+}
+.NonCursor{
+    cursor: default;
+}
+.Cursor{
+        cursor: pointer;
+}
+
+.NavItem:hover {
+    background-color: #1b5e20;
+}
+
+
+.secondNav {
+    position: absolute;
+    top: 100%;
+    left: 0;
+    background-color: #2e7d32;
+    list-style: none;
+    padding: 0;
+    margin: 0;
+    min-width: 200px;
+    box-shadow: 0 4px 6px rgba(0,0,0,0.1);
+    opacity: 0;
+    visibility: hidden;
+    transition: all 0.3s;
+}
+
+.NavItem:hover .secondNav {
+    opacity: 1;
+    visibility: visible;
+}
+
+.secondNav li {
+    padding: 10px 20px;
+    transition: background-color 0.2s;
+}
+
+.secondNav li:hover {
+    background-color: #1b5e20;
+}
+
+
+@media (max-width: 1050px) {
+    .NavBar {
+        padding: 0 15px;
+    }
+    
+    .NavBarIMG {
+        margin-right: 20px;
+    }
+    
+    .NavItem {
+        padding: 0 15px;
+        font-size: 16px;
+    }
+}
+
+@media (max-width: 768px) {
+    .NavBar {
+        height: auto;
+        flex-direction: column;
+        padding: 10px 0;
+    }
+    
+    .NavBarIMG {
+        margin: 0 0 15px 0;
+    }
+    
+    .Navli {
+        flex-direction: column;
+        width: 100%;
+    }
+    
+    .NavItem {
+        width: 100%;
+        justify-content: center;
+        padding: 10px 0;
+        height: auto;
+    }
+    
+    .secondNav {
+        position: static;
+        display: none;
+        width: 100%;
+        box-shadow: none;
+    }
+    
+    .NavItem:hover .secondNav {
+        display: block;
+        opacity: 1;
+    }
+}
