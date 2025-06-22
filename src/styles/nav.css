@@ -1,5 +1,6 @@
 
 .NavBar {
+    color: w;
     background-color: #2e7d32;
     height: 60px;
     width: 100%;
@@ -29,6 +30,7 @@
 }
 
 .NavItem {
+    text-decoration: none;
     position: relative;
     color: white;
     font-family: "Roboto", sans-serif;
@@ -39,6 +41,10 @@
     align-items: center;
     height: 100%;
     transition: background-color 0.3s;
+}
+.NavLink{
+    text-decoration: none;
+    color: white;
 }
 .NonCursor{
     cursor: default;
