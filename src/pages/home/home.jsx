@@ -33,8 +33,8 @@ const Home = () => {
     </div>
     <div className="OurGraduates">
       <div className="OurGraduatesFlexEnd">
-        <div className="BlockTittleOurGraduates">
-          <span className='TittleOurGraduates'>Выпускники работают</span>
+        <div className="BlockTittleHome">
+          <span className='TittleHome'>Выпускники работают</span>
           <div className="Stip" style={{ width: "100%" }}></div>
         </div>
       </div>
@@ -70,9 +70,39 @@ const Home = () => {
         </div>
 
       </div>
-              <div className="Stip" style={{ marginLeft: 0 }}></div>
+      <div className="Stip" style={{ marginLeft: 0 }}></div>
     </div>
+    <div className="HistoryOfCafedra">
+      <div className="HistoryOfCafedraFlexStart">
+        <div className="BlockTittleHome">
+          <span className='TittleHome'>История кафедры</span>
+          <div className="Stip" style={{ width: "100%" }}></div>
+        </div>
+      </div>
+      <div className="OurGraduatesInfo">
+        <div className="OurGraduatesInfoText"><ul>
+          <li><img src={Tochka} className="Tochka TochkaHistory" />
+            <p>В 1961 году был осуществлен первый набор студентов
+              на специальность "Автоматика и телемеханика".</p> </li>
+          <li><img src={Tochka} className="Tochka TochkaHistory" />
+            <p>Приказом №144 от 6 июня 1977 года проректора МЭИ
+              по Смоленскому филиалу В.Ф.Фёдорова
+              была организована кафедра вычислительной техники</p> </li>
+          <li><img src={Tochka} className="Tochka TochkaHistory" />
+            <p>Кафедра компьютерных технологий и управления
+              присоединилась к кафедре
+              вычислительной техники в 2002 году. </p> </li>
+          <li><img src={Tochka} className="Tochka TochkaHistory" />
+            <p>С 2024 года кафедрой руководит
+              Борисов Вадим Владимирович.</p> </li>
 
-  </div>)
+
+        </ul>
+        </div>
+
+      </div>
+    </div>
+  </div>
+  )
 }
 export default Home;
