@@ -34,7 +34,7 @@ const Home = () => {
     <div className="OurGraduates">
       <div className="OurGraduatesFlexEnd">
         <div className="BlockTittleHome">
-          <span className='TittleHome'>Выпускники работают</span>
+          <span className='TittleHome'>Наши выпускники работают</span>
           <div className="Stip" style={{ width: "100%" }}></div>
         </div>
       </div>
@@ -98,8 +98,19 @@ const Home = () => {
 
 
         </ul>
+          <div className="Stick StickInHistory"></div>
         </div>
 
+
+      </div>
+      <div className="Stip" style={{ marginRight: 0 }}></div>
+    </div>
+    <div className="OurGraduates">
+      <div className="OurGraduatesFlexEnd">
+        <div className="BlockTittleHome">
+          <span className='TittleHome'>Педагогический состав</span>
+          <div className="Stip" style={{ width: "100%" }}></div>
+        </div>
       </div>
     </div>
   </div>

@@ -1,5 +1,5 @@
 .home {
-    padding-top: 40px;
+    padding-top: 80px;
 }
 
 .InfoCafedra {
@@ -23,6 +23,9 @@ clip-path: inset(0px 20px 0px 0px); */
     font-family: "Roboto", sans-serif;
     font-size: 20px;
 }
+.CafedraCard:last-child{
+    margin-bottom: 0px;
+}
 
 .Stick {
     width: 3px;
@@ -44,7 +47,7 @@ clip-path: inset(0px 20px 0px 0px); */
 
 .OurGraduates {
 
-    margin-top: 40px;
+    margin-top: 20px;
 }
 
 .OurGraduatesFlexEnd {
@@ -98,7 +101,9 @@ clip-path: inset(0px 20px 0px 0px); */
     margin-top: auto;
     margin-bottom: auto;
     margin-right: 50px;
+
 }
+
 
 .OurGraduatesInfoText {
     margin-left: 50px;
@@ -124,9 +129,26 @@ clip-path: inset(0px 20px 0px 0px); */
 
 /* HistoryOfCafedra */
 .HistoryOfCafedra{
-    margin-top: 40px;
+    margin-top: 20px;
+    
 }
 .HistoryOfCafedraFlexStart{
     display: flex;
 justify-content: flex-start;
+}
+.HistoryOfCafedra .OurGraduatesInfo .OurGraduatesInfoText li{
+    margin-bottom: 40px;
+}
+.HistoryOfCafedra .OurGraduatesInfo .OurGraduatesInfoText li:last-child {
+    margin-bottom: 0px;
+}
+.OurGraduatesInfoText p{
+    width: 700px;
+}
+.StickInHistory{
+    position: absolute;
+    z-index: -1;
+    height: 230px;
+    margin-top: -237px;
+    margin-left: 6px;
 }
