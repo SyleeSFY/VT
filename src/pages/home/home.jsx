@@ -1,6 +1,7 @@
 import React from 'react';
 import '../../styles/home.css';
 import OurGraduatesInfoIMG from '../../components/Icons/VT.png';
+import Tochka from '../../components/Icons/Ellipse 1@2x.png';
 const Home = () => {
   return (<div className='home'>
 
@@ -32,16 +33,44 @@ const Home = () => {
     </div>
     <div className="OurGraduates">
       <div className="OurGraduatesFlexEnd">
-      <div className="BlockTittleOurGraduates">
-        <span className='TittleOurGraduates'>Выпускники работают</span>
-        <div className="Stip" style={{width: "100%"}}></div>
-      </div>
+        <div className="BlockTittleOurGraduates">
+          <span className='TittleOurGraduates'>Выпускники работают</span>
+          <div className="Stip" style={{ width: "100%" }}></div>
+        </div>
       </div>
 
       <div className="OurGraduatesInfo">
-        <img src={OurGraduatesInfoIMG} alt="" className='OurGraduatesInfoIMG'/>
-        <div className=""></div>
+        <img src={OurGraduatesInfoIMG} alt="" className='OurGraduatesInfoIMG' />
+        <div className="OurGraduatesInfoText"><ul>
+          <li><img src={Tochka} className="Tochka SmallTochka" />
+            <p>Департамент Смоленской области по информационным технологиям, связи и обеспечению  предоставления услуг в электронном виде;</p> </li>
+          <li><img src={Tochka} className="Tochka SmallTochka" />
+            <p>Смоленское областное государственное бюджетное учреждение «Центр информационно-коммуникационных технологий»;</p> </li>
+          <li><img src={Tochka} className="Tochka SmallTochka" />
+            <p>Филиал ФГУП концерн «Росэнергоатом», Смоленская
+              атомная станция, г. Десногорск;</p> </li>
+          <li><img src={Tochka} className="Tochka SmallTochka" />
+            <p>ОАО «Измеритель», г. Смоленск;</p> </li>
+          <li><img src={Tochka} className="Tochka SmallTochka" />
+            <p>
+              ФГУП «СПО Аналитприбор», г. Смоленск;</p> </li>
+          <li><img src={Tochka} className="Tochka SmallTochka" />
+            <p>ФАК СБ РФ (ОАО) – Смоленское отделение № 8609;</p> </li>
+          <li><img src={Tochka} className="Tochka SmallTochka" />
+            <p>ООО НПО «Рубикон-Инновация», г. Смоленск;</p> </li>
+          <li><img src={Tochka} className="Tochka SmallTochka" />
+            <p>ООО «МТС», г. Смоленск;</p> </li>
+          <li><img src={Tochka} className="Tochka SmallTochka" />
+            <p>ЗАО «НИИ СТТ»;</p> </li>
+          <li><img src={Tochka} className="Tochka SmallTochka" />
+            <p>Смоленский филиал АО «Радиозавод»;</p> </li>
+          <li><img src={Tochka} className="Tochka SmallTochka" />
+            <p>ООО «Этна – информационные технологии», г. Смоленск</p> </li>
+        </ul>
+        </div>
+
       </div>
+              <div className="Stip" style={{ marginLeft: 0 }}></div>
     </div>
 
   </div>)
