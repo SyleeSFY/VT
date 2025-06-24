@@ -20,7 +20,7 @@ const EducatorsInformation = [
 
   { id: 14, name: "Курылев Владимир Алексеевич", src: require("../../components/Educators/Kuryilev_Vladimir_Alekseevich.jpg") },
   { id: 15, name: "Тихонов Владимир Александрович", src: require("../../components/Educators/Tihonov_Vladimir_Aleksandrovich.jpg") },
-  { id: 16, name: "Фомченков Владимир Петрович", src: require("../../components/Educators/Fomchenkov_Vladimir_Petrovich.png") },
+  { id: 16, name: "Фомченков Владимир Петрович", src: require("../../components/Educators/Fomchenkov_Vladimir_Petrovich.jpg") },
   { id: 17, name: "Фомин Александр Иванович", src: require("../../components/Educators/Fomin_Aleksandr_Ivanovich.jpg") },
   { id: 18, name: "Андреев Михаил Алексеевич", src: require("../../components/Educators/Andreev_Mihail_Alekseevich.jpg") },
   { id: 19, name: "Федулова Светлана Александровна", src: require("../../components/Educators/Fedulova_Svetlana_Aleksandrovna.jpg") },
