@@ -37,8 +37,8 @@ const Home = () => {
 
 
     </div>
-    <div className="OurGraduates">
-      <div className="OurGraduatesFlexEnd">
+    <div className="DivInfo">
+      <div className="FlexEnd">
         <div className="BlockTittleHome">
           <span className='TittleHome'>Наши выпускники работают</span>
           <div className="Stip" style={{ width: "100%" }}></div>

@@ -10,7 +10,7 @@
     align-items: center;
     padding: 0 20px;
     box-sizing: border-box;
-    z-index: 1000; /* Добавим z-index чтобы меню было поверх других элементов */
+    z-index: 1000;
 }
 
 .NavBarIMG {
@@ -44,7 +44,6 @@
     align-items: center;
     height: 100%;
     transition: background-color 0.3s;
-    /* Добавляем ограничение по ширине */
     min-width: fit-content;
 }
 .NavLink{
@@ -71,8 +70,8 @@
     list-style: none;
     padding: 0;
     margin: 0;
-    min-width: 100%; /* Занимает всю ширину родителя */
-    width: max-content; /* Ширина по содержимому, но не меньше ширины родителя */
+    min-width: 100%; 
+    width: max-content; 
     box-shadow: 0 4px 6px rgba(0,0,0,0.1);
     opacity: 0;
     visibility: hidden;

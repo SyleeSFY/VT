@@ -1,0 +1,50 @@
+.EducatorsCards {
+    padding: 60px 80px;
+    gap: 10px;
+
+}
+
+.Line {
+    display: grid;
+    grid-template-columns: repeat(5, 1fr);
+    gap: 10px 10px;
+}
+
+.Card {
+    /* border: 1px solid #2e7d32; */
+    height: 250px;
+    width: 180px;
+    background-size: cover;
+
+}
+
+.Card img {
+    height: 250px;
+    width: 180px;
+}
+
+.fio {
+    width: 100%;
+    height: 100%;
+    opacity: 0;
+    transition: opacity 0.5s ease;
+    color: white;
+    white-space: pre-line;
+    text-align: center;
+    font-size: 26px;
+    padding-top: 0px;
+    background: green;
+
+
+}
+
+.fio:hover {
+    opacity: 1;
+}
+
+/*  */
+@media (max-width: 768px) {
+    .Line {
+        grid-template-columns: repeat(2, 1fr);
+    }
+}

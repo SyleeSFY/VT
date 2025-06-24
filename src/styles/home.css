@@ -21,9 +21,6 @@
 }
 
 .CafedraCard {
-    /* padding-right: 10px; */
-    /* background: rgb(26, 206, 35);
-clip-path: inset(0px 20px 0px 0px); */
     display: flex;
     margin-bottom: 40px;
     align-items: center;
@@ -58,12 +55,12 @@ clip-path: inset(0px 20px 0px 0px); */
 
 /* OurGraduates */
 
-.OurGraduates {
+.DivInfo {
 
     margin-top: 20px;
 }
 
-.OurGraduatesFlexEnd {
+.FlexEnd {
     display: flex;
     justify-content: flex-end;
 }
