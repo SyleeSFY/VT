@@ -83,27 +83,27 @@ clip-path: inset(0px 20px 0px 0px); */
 }
 
 .OurGraduatesInfo {
-  display: flex;
-  flex-wrap: wrap; 
-  justify-content: center; 
-  gap: 20px; 
-  margin-top: 30px;
-  margin-bottom: 30px;
-  padding: 0 40px;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+
+    margin-top: 30px;
+
+    padding: 0 40px 30px 40px;
 }
 
 .OurGraduatesInfoIMG {
-  width: 100%;
-  max-width: 530px;
-  height: auto; 
-  object-fit: contain;
-      margin-right: 70px;
-    margin-left: 75px;
+    width: 100%;
+    max-width: 530px;
+    height: auto;
+    object-fit: contain;
+    margin-right: 50px;
+    margin-left: 50px;
 }
 
 .OurGraduatesInfoText {
-  flex: 1;
-  min-width: 300px;
+    flex: 1;
+    min-width: 300px;
 }
 
 .OurGraduatesInfoText p {
@@ -125,6 +125,7 @@ clip-path: inset(0px 20px 0px 0px); */
     height: 15px;
     border-radius: 50%;
     margin-right: 10px;
+    flex-shrink: 0
 }
 
 .SmallTochka {
@@ -133,9 +134,7 @@ clip-path: inset(0px 20px 0px 0px); */
     margin-right: 10px;
     margin-top: 6px;
     margin-bottom: auto;
-
-
-
+    flex-shrink: 0
 }
 
 
@@ -182,7 +181,6 @@ clip-path: inset(0px 20px 0px 0px); */
 }
 
 .StickInHistory {
-    position: absolute;
     z-index: -1;
     height: 230px;
     margin-top: -237px;

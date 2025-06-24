@@ -110,7 +110,7 @@ const Home = () => {
 
 
       </div>
-      <div className="Stip" style={{ marginRight: 0 }}></div>
+
     </div>
   </div>
   )
