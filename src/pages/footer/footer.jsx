@@ -12,7 +12,7 @@ const Footer = () => {
 
 
 
-                123
+                хуй
             </div>
 
             <div className="footer-bottom">
