@@ -5,13 +5,15 @@
 }
 
 .Line {
-    display: grid;
+    display: flex;
     grid-template-columns: repeat(5, 1fr);
-    gap: 10px 10px;
+    flex-wrap: wrap;
+    gap: 20px;
+    /* Расстояние между карточками */
 }
 
 .Card {
-    /* border: 1px solid #2e7d32; */
+
     height: 250px;
     width: 180px;
     background-size: cover;
@@ -19,8 +21,13 @@
 }
 
 .Card img {
+    border: 1px solid #2e7d32;
+    border-radius: 8px;
+
+    width: 100%;
     height: 250px;
-    width: 180px;
+    object-fit: cover;
+    border-radius: 8px;
 }
 
 .fio {
@@ -47,4 +54,13 @@
     .Line {
         grid-template-columns: repeat(2, 1fr);
     }
+
+}
+
+
+.Card img {}
+
+.fio {
+    margin-top: 10px;
+    font-weight: bold;
 }
