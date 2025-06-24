@@ -1,7 +1,7 @@
 import React from 'react';
 import '../../styles/home.css';
 import OurGraduatesInfoIMG from '../../components/Icons/VT.png';
-import Tochka from '../../components/Icons/Ellipse 1@2x.png';
+
 const Home = () => {
   return (<div className='home'>
     <div className="FlexStart">

@@ -21,6 +21,7 @@ body, html, nav, div, p, ul, h1, h2, h3 {
   padding: 0 15px;
   box-sizing: border-box;
   position: relative; 
+  
 }
 .containerBg {
   background-color: rgba(255, 255, 255);
@@ -30,4 +31,7 @@ body, html, nav, div, p, ul, h1, h2, h3 {
   top: 0;
   left: 0;
   z-index: -1;
+    border-style: none solid none solid;
+  border-color: #2e7d32;
+  border-width: 3px;
 }
