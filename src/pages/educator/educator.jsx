@@ -42,7 +42,7 @@ const Educator = () => {
 
   return (
     <div className='home'>
-      <div className="DivInfo">
+
         <div className="FlexEnd" style={{ paddingRight: 60 }}>
           <div className="BlockTittleHome">
             <span className='VT'>Преподаватели и сотрудники</span>
@@ -55,7 +55,7 @@ const Educator = () => {
             <div 
               className={`Card Cursor ${loaded ? 'visible' : ''}`} 
               key={educator.id}
-              style={{ transitionDelay: `${educator.id * 0.05}s` }}
+              style={{ transitionDelay: `${educator.id * 0.1}s` }}
             >
               <img 
                 src={educator.src} 
@@ -69,7 +69,7 @@ const Educator = () => {
           ))}
         </div>
       </div>
-    </div>
+
   )
 }
 
