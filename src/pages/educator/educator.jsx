@@ -1,5 +1,6 @@
-import React from 'react';
+import React, { useState, useEffect } from 'react';
 import '../../styles/educator.css';
+
 const EducatorsInformation = [
   { id: 1, name: "Борисов\nВадим Владимирович", src: require("../../components/Educators/Borisov_Vadim_Vladimirovich.jpg") },
   { id: 2, name: "Федулов Александр Сергеевич", src: require("../../components/Educators/Fedulov_Aleksandr_Sergeevich.jpg") },
@@ -27,37 +28,49 @@ const EducatorsInformation = [
   { id: 24, name: "Рыбаков Виктор Алексеевич", src: require("../../components/Educators/Ryibakov_Viktor_Alekseevich.jpg") },
   { id: 25, name: "Ольшевская Ирина Николаевна", src: require("../../components/Educators/Olshevskaya_Irina_Nikolaevna.jpg") }
 ];
-const Educator = () => {
-  return (<div className='home'>
-    <div className="DivInfo" style={{}}>
-      <div className="FlexEnd">
-        <div className="BlockTittleHome">
-          <span className='TittleHome'>Преподаватели</span>
-          <div className="Stip" style={{ width: "100%" }}></div>
-        </div>
-      </div>
-      <div className="EducatorsCards">
-        <div className="Line">
-          {EducatorsInformation.map(test => (
 
-            <div className="Card">
-              <div className="Active">
-                <img src={test.src} alt='' />
-                <p className='fio'>{test.name}</p>
+const Educator = () => {
+  const [loaded, setLoaded] = useState(false);
+
+  useEffect(() => {
+    const timer = setTimeout(() => {
+      setLoaded(true);
+    }, 100);
+    
+    return () => clearTimeout(timer);
+  }, []);
+
+  return (
+    <div className='home'>
+      <div className="DivInfo">
+        <div className="FlexEnd" style={{ paddingRight: 60 }}>
+          <div className="BlockTittleHome">
+            <span className='VT'>Преподаватели и сотрудники</span>
+
+          </div>
+        </div>
+        
+        <div className={`EducatorsCards ${loaded ? 'loaded' : ''}`}>
+          {EducatorsInformation.map(educator => (
+            <div 
+              className={`Card Cursor ${loaded ? 'visible' : ''}`} 
+              key={educator.id}
+              style={{ transitionDelay: `${educator.id * 0.05}s` }}
+            >
+              <img 
+                src={educator.src} 
+                alt={`Фото ${educator.name}`} 
+                className='EducatorPhoto'
+              />
+              <div className="EducatorOverlay">
+                <p className='fio'>{educator.name}</p>
               </div>
             </div>
           ))}
-
-          {/* style={{backgroundImage: `url(${require('../../components/Borisov_Vadim_Vladimirovich.jpg')})`}} */}
-
         </div>
-
       </div>
     </div>
-
-
-  </div>
-
   )
 }
+
 export default Educator;

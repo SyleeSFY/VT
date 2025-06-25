@@ -1,59 +1,74 @@
 .EducatorsCards {
-    padding: 60px 80px;
-    gap: 10px;
-}
-
-.Line {
+    padding: 60px 100px;
     display: flex;
     grid-template-columns: repeat(5, 1fr);
     flex-wrap: wrap;
-    gap: 20px;
+    gap: 13px;
 }
-
 .Card {
-
     height: 250px;
     width: 180px;
-    background-size: cover;
-
+    border-radius: 8px;
+    border: 2px solid #2e7d32;
+    position: relative;
+    overflow: hidden;
 }
 
 .Card img {
-    border: 3px solid #2e7d32;
-    border-radius: 8px;
-
-    width: 100%;
-    height: 250px;
-    object-fit: cover;
-    border-radius: 8px;
-}
-
-.fio {
     width: 100%;
     height: 100%;
-    opacity: 1;
-    /* transition: opacity 0.5s ease; */
+    object-fit: cover;
+    border-radius: 5px;
+    transition: opacity 0.3s ease;
+}
+.fio {
     color: white;
-    white-space: pre-line;
     text-align: center;
-    font-size: 26px;
-    padding-top: 0px;
-    background: green;
-    margin-top: -165px;
-    padding-bottom: 70px;
-
-
-}
-.Active{
-    box-sizing: border-box;
-    background: green;
+    font-size: 20px;
+    padding: 10px;
+    white-space: pre-line;
 }
 
+.EducatorOverlay {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(46, 125, 50, 0.9);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    opacity: 0;
+    transition: opacity 0.3s ease;
+    font-family: Roboto;
+    font-weight: 400;
+}
 
-/*  */
+/* Анимация появления */
+.EducatorsCards .Card {
+    opacity: 0;
+    transform: translateY(20px);
+    transition: opacity 0.5s ease, transform 0.5s ease;
+}
+
+.EducatorsCards.loaded .Card.visible {
+    opacity: 1;
+    transform: translateY(0);
+}
+
+.Card:hover img {
+    opacity: 0;
+}
+
+.Card:hover .EducatorOverlay {
+    opacity: 1;
+}
+
+
 @media (max-width: 768px) {
-    .Line {
-        grid-template-columns: repeat(2, 1fr);
+    .EducatorsCards {
+        padding: 30px 20px;
+        justify-content: center;
     }
-
 }
