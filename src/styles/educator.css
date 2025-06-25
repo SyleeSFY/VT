@@ -1,7 +1,6 @@
 .EducatorsCards {
     padding: 60px 80px;
     gap: 10px;
-
 }
 
 .Line {
@@ -9,7 +8,6 @@
     grid-template-columns: repeat(5, 1fr);
     flex-wrap: wrap;
     gap: 20px;
-    /* Расстояние между карточками */
 }
 
 .Card {
@@ -21,7 +19,7 @@
 }
 
 .Card img {
-    border: 1px solid #2e7d32;
+    border: 3px solid #2e7d32;
     border-radius: 8px;
 
     width: 100%;
@@ -33,21 +31,24 @@
 .fio {
     width: 100%;
     height: 100%;
-    opacity: 0;
-    transition: opacity 0.5s ease;
+    opacity: 1;
+    /* transition: opacity 0.5s ease; */
     color: white;
     white-space: pre-line;
     text-align: center;
     font-size: 26px;
     padding-top: 0px;
     background: green;
+    margin-top: -165px;
+    padding-bottom: 70px;
 
 
 }
-
-.fio:hover {
-    opacity: 1;
+.Active{
+    box-sizing: border-box;
+    background: green;
 }
+
 
 /*  */
 @media (max-width: 768px) {
@@ -55,12 +56,4 @@
         grid-template-columns: repeat(2, 1fr);
     }
 
-}
-
-
-.Card img {}
-
-.fio {
-    margin-top: 10px;
-    font-weight: bold;
 }
