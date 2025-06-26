@@ -55,7 +55,7 @@ const Educator = () => {
             <div 
               className={`Card Cursor ${loaded ? 'visible' : ''}`} 
               key={educator.id}
-              style={{ transitionDelay: `${educator.id * 0.1}s` }}
+              style={{ transitionDelay: `${educator.id * 0.08}s` }}
             >
               <img 
                 src={educator.src} 

@@ -27,7 +27,7 @@ const Nav = () => {
                     </li>
 
 
-                    <Link to="/test" className="NavLink"> <li className='NavItem Cursor'>КОНТАКТЫ</li></Link>
+                    <Link to="/contacts" className="NavLink"> <li className='NavItem Cursor'>КОНТАКТЫ</li></Link>
 
                 </ul>
             </nav>

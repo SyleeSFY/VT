@@ -1,9 +1,9 @@
 .EducatorsCards {
-    padding: 60px 100px;
+    padding: 20px 60px;
     display: flex;
     grid-template-columns: repeat(5, 1fr);
     flex-wrap: wrap;
-    gap: 13px;
+    gap: 20px;
 }
 .Card {
     height: 250px;

@@ -9,20 +9,15 @@ import Footer from './pages/footer/footer.jsx'
 
 const root = ReactDOM.createRoot(document.getElementById('root'));
 root.render(
-    <div>
-        <BrowserRouter>
-            <Nav />
-            <div className=' container'>
-                <div className='containerBg'>
-                    <App />
-
-
-                </div>
-            </div>
-            <Footer />
-        </BrowserRouter>
+  <BrowserRouter>
+    <div style={{ display: 'flex', flexDirection: 'column', minHeight: '100vh' }}>
+      <Nav />
+      <div className="container">
+        <div className="containerBg">
+          <App />
+        </div>
+      </div>
+      <Footer />
     </div>
-
-
+  </BrowserRouter>
 );
-
