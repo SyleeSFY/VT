@@ -29,6 +29,9 @@ body {
 }
 
 .container {
+    background-color: rgba(255, 255, 255);
+    border-style: none solid none solid;
+  border-color: #2e7d32;
   width: 100%;
   max-width: 1400px;
   margin: 0 auto;
@@ -39,11 +42,10 @@ body {
 }
 
 .containerBg {
-  background-color: rgba(255, 255, 255);
+
   width: 100%;
   min-height: 100%;
-  border-style: none solid none solid;
-  border-color: #2e7d32;
+
   border-width: 3px;
   box-sizing: border-box;
 }

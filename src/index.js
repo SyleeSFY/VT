@@ -13,9 +13,9 @@ root.render(
     <div style={{ display: 'flex', flexDirection: 'column', minHeight: '100vh' }}>
       <Nav />
       <div className="container">
-        <div className="containerBg">
+     
           <App />
-        </div>
+
       </div>
       <Footer />
     </div>
