@@ -64,6 +64,11 @@
     display: flex;
     justify-content: flex-end;
 }
+.FlexCenter {
+    display: flex;
+    justify-content: center;
+}
+
 
 .BlockTittleHome {
     box-sizing: border-box;
