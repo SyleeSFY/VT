@@ -31,7 +31,7 @@ const Contacts = () => {
             </div>
           </div>
           <div className="RightBlockContacts">
-            <iframe src="https://yandex.ru/map-widget/v1/?um=constructor%3A15441288ef2d97f04fc48793859714b354c70979f4e67308bb0cdf10ecdaeeb8&amp;source=constructor" width="690" height="500" frameborder="0"></iframe>
+<iframe src="https://yandex.ru/map-widget/v1/?um=constructor%3A248f63b372de498e9051cbf8be2b3ed6f0e20425851ee1dd481c97e2becd51c9&amp;source=constructor" width="690" height="600" frameborder="0"></iframe>
           </div>
         </div>
       </div>

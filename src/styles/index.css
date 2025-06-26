@@ -35,10 +35,10 @@ body {
   width: 100%;
   max-width: 1400px;
   margin: 0 auto;
-  padding: 0 15px;
+  padding: 0 15px 0 15px;
   box-sizing: border-box;
   flex: 1;
-  
+    padding-left: calc(100vw - 100%); /* Компенсирует сдвиг */
 }
 
 .containerBg {
@@ -49,3 +49,4 @@ body {
   border-width: 3px;
   box-sizing: border-box;
 }
+

@@ -1,31 +1,38 @@
-.Block{
-    margin-top: 60px;
+.Block {
+  margin-top: 60px;
 }
-.BlockContacts{
-    height: 500px;
-    margin-top: 30px;
-    background: #009639;
+.BlockContacts {
+  margin-left: 15px;
+  height: 600px;
+  margin-top: 30px;
+  background: #009639;
 
-    display: flex;
+  display: flex;
 }
-.LeftBlockContacts, .RightBlockContacts {
-    flex: 1; 
-    box-sizing: border-box; 
+
+.LeftBlockContacts,
+.RightBlockContacts {
+  flex: 1;
+  box-sizing: border-box;
 }
+
 .LeftBlockContacts {
   display: flex;
-  width: 100%; 
+  width: 100%;
 }
 
-.Left, .Right {
-    display: flex;
-    flex-direction: column;
+.Left,
+.Right {
+  display: flex;
+  flex-direction: column;
   flex: 1;
 
   padding: 20px;
   box-sizing: border-box;
 }
-.FirstBlock,.SecondBlock{
-    flex: 1;
-      box-sizing: border-box;
+
+.FirstBlock,
+.SecondBlock {
+  flex: 1;
+  box-sizing: border-box;
 }
