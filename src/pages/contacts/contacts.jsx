@@ -4,7 +4,7 @@ import OurGraduatesInfoIMG from '../../components/Icons/VT.png';
 import Geo from '../../components/Iconss/geo.png'
 import Mail from '../../components/Iconss/mail.png'
 import Mobile from '../../components/Iconss/phone.png'
-import Contact from '../../components/Iconss/people.png'
+
 const Contacts = () => {
   return (
     <div className='home'>
@@ -29,7 +29,7 @@ const Contacts = () => {
                 <div className="ContactsInfo">
                   <img src={Geo} alt="" className='ContactsIMG' />
                   <p>Адрес</p>
-                  <p className='ContactsContent TEST'>214013, г. Смоленск, Энергетический проезд, д. 1</p>
+                  <p className='ContactsContent'>214013, г. Смоленск, Энергетический проезд, д. 1</p>
                 </div>
               </div>
               <div className="SecondBlock">
