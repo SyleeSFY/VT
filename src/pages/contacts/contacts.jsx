@@ -18,7 +18,7 @@ const Contacts = () => {
       <div className="Block">
         <div className="FlexCenter">
           <div className="BlockTittleHome">
-            <span className='TittleHome' style={{ width: "80%" }}>Контакты для вашего удобства!</span>
+            <span className='TittleHome' style={{ width: "80%" }}>Контакты для связи с кафедрой!</span>
             <div className="Stip" style={{ width: "80%" }}></div>
           </div>
         </div>
@@ -28,7 +28,7 @@ const Contacts = () => {
               <div className="FirstBlock">
                 <div className="ContactsInfo">
                   <img src={Geo} alt="" className='ContactsIMG' />
-                  <p>Адрес</p>
+                  <p className='ContactsContentTittle'>Адрес:</p>
                   <p className='ContactsContent'>214013, г. Смоленск, Энергетический проезд, д. 1</p>
                 </div>
               </div>
@@ -36,8 +36,8 @@ const Contacts = () => {
 
                 <div className="ContactsInfo">
                   <img src={Mail} alt="" className='ContactsIMG' />
-                  <p>Почта</p>
-                  <p className='ContactsContent TEST'>VT@sbmpei.ru</p>
+                  <p className='ContactsContentTittle'>Почта:</p>
+                  <p className='ContactsContent'>VT@sbmpei.ru</p>
 
                 </div>
               </div>
@@ -46,16 +46,16 @@ const Contacts = () => {
               <div className="FirstBlock">
                 <div className="ContactsInfo">
                   <img src={Mobile} alt="" className='ContactsIMG' />
-                  {/* <p>Телефон</p> */}
-                  <p className='ContactsContent TEST'>+7(4812) 39-11-60<br/>
+                  <p className='ContactsContentTittle'>Телефон:</p>
+                  <p className='ContactsContent'>+7(4812) 39-11-60<br/>
                     +7(4812) 39-11-68</p>
                 </div>
               </div>
               <div className="SecondBlock">
-                <div className="ContactsInfo CenterBlock">
+                <div className="ContactsInfo" style={{alignItems:"start"}}>
            
-                  <p style={{fontSize:28}} className=''>Контакное лицо</p>
-                  <p className='ContactsContent' style={{fontSize:34}}>Ольшевская<br/>
+                  <p style={{fontSize:34}} className=''><strong>Контакное лицо</strong></p>
+                  <p className='ContactsContent' style={{fontSize:32, marginTop:30}}>Ольшевская<br/>
                     Ирина Николаевна</p>
                 </div>
               </div>

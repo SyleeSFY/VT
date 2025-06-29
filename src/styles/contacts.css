@@ -9,7 +9,7 @@
   margin-left: 15px;
   height: 600px;
   margin-top: 30px;
-  background: #009639;
+  background: #008433;
 
   display: flex;
 }
@@ -34,12 +34,15 @@
 
   box-sizing: border-box;
 }
-.Left{
-  border-right: 3px solid rgb(35, 157, 1);
+
+
+/* 
+.FirstBlock {
+  border-bottom: 3px solid rgb(255, 0, 0);
+  margin-top: auto;
+  margin-bottom: auto;
 }
-.FirstBlock{
-  border-bottom: 3px solid rgb(35, 157, 1);
-}
+.Left{border-right: 3px solid rgb(35, 157, 1);} */
 
 .FirstBlock,
 .SecondBlock {
@@ -47,12 +50,13 @@
   box-sizing: border-box;
   display: flex;
   justify-content: center;
-  padding-top: 30px;
+
   font-family: "Roboto", sans-serif;
   font-size: 18px;
   font-weight: 400;
 
   color: rgb(238, 238, 238);
+  align-items: center;
 
 
 }
@@ -68,17 +72,27 @@
   width: 80px;
 
 }
-.ContactsContent{
 
-    font-family: Roboto;
-  margin-top: 30px;
+.ContactsContent {
+
+  font-family: Roboto;
   font-size: 24px;
   color: white;
+  text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.5);
 
 }
-.TEST{
-  text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.5);
+
+.ContactsContentTittle {
+  font-size: 32px;
+  margin-top: 15px;
+  margin-bottom: 15px;
 }
-.CenterBlock{
-padding-top: 50px;
+.Left .FirstBlock{
+  background: #018935;
+}
+.Right .FirstBlock{
+  background: #01752d;
+}
+.Left .SecondBlock{
+  background: #01963a;
 }
