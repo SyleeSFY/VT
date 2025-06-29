@@ -1,6 +1,6 @@
 import React from 'react';
 import '../../styles/contacts.css';
-import OurGraduatesInfoIMG from '../../components/Icons/VT.png';
+
 import Geo from '../../components/Iconss/geo.png'
 import Mail from '../../components/Iconss/mail.png'
 import Mobile from '../../components/Iconss/phone.png'
@@ -47,15 +47,15 @@ const Contacts = () => {
                 <div className="ContactsInfo">
                   <img src={Mobile} alt="" className='ContactsIMG' />
                   <p className='ContactsContentTittle'>Телефон:</p>
-                  <p className='ContactsContent'>+7(4812) 39-11-60<br/>
+                  <p className='ContactsContent'>+7(4812) 39-11-60<br />
                     +7(4812) 39-11-68</p>
                 </div>
               </div>
               <div className="SecondBlock">
-                <div className="ContactsInfo" style={{alignItems:"start"}}>
-           
-                  <p style={{fontSize:34}} className=''><strong>Контакное лицо</strong></p>
-                  <p className='ContactsContent' style={{fontSize:32, marginTop:30}}>Ольшевская<br/>
+                <div className="ContactsInfo" style={{ alignItems: "start" }}>
+
+                  <p style={{ fontSize: 34 }} className=''><strong>Контакное лицо</strong></p>
+                  <p className='ContactsContent' style={{ fontSize: 32, marginTop: 30 }}>Ольшевская<br />
                     Ирина Николаевна</p>
                 </div>
               </div>
