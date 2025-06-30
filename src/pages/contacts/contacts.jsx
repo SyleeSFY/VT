@@ -1,6 +1,5 @@
 import React from 'react';
 import '../../styles/contacts.css';
-
 import Geo from '../../components/Iconss/geo.png'
 import Mail from '../../components/Iconss/mail.png'
 import Mobile from '../../components/Iconss/phone.png'
@@ -62,7 +61,7 @@ const Contacts = () => {
             </div>
           </div>
           <div className="RightBlockContacts">
-            <iframe src="https://yandex.ru/map-widget/v1/?um=constructor%3A248f63b372de498e9051cbf8be2b3ed6f0e20425851ee1dd481c97e2becd51c9&amp;source=constructor" width="690" height="600" frameborder="0"></iframe>
+            <iframe title='Расположение кафедры ВТ' src="https://yandex.ru/map-widget/v1/?um=constructor%3A248f63b372de498e9051cbf8be2b3ed6f0e20425851ee1dd481c97e2becd51c9&amp;source=constructor" width="690" height="600" frameborder="0"></iframe>
           </div>
         </div>
       </div>
