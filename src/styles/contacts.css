@@ -1,8 +1,6 @@
 .Block {
-  /* padding-top: 60px; */
-  padding-bottom: 60px;
-  margin-top: 60px;
 
+  margin-top: 60px;
 }
 
 .BlockContacts {
@@ -10,7 +8,6 @@
   height: 600px;
   margin-top: 30px;
   background: #008433;
-
   display: flex;
 }
 
@@ -31,18 +28,8 @@
   flex-direction: column;
   flex: 1;
   justify-content: center;
-
   box-sizing: border-box;
 }
-
-
-/* 
-.FirstBlock {
-  border-bottom: 3px solid rgb(255, 0, 0);
-  margin-top: auto;
-  margin-bottom: auto;
-}
-.Left{border-right: 3px solid rgb(35, 157, 1);} */
 
 .FirstBlock,
 .SecondBlock {
@@ -50,36 +37,28 @@
   box-sizing: border-box;
   display: flex;
   justify-content: center;
-
   font-family: "Roboto", sans-serif;
   font-size: 18px;
   font-weight: 400;
-
   color: rgb(238, 238, 238);
   align-items: center;
-
-
 }
 
 .ContactsInfo {
   text-align: center;
   font-size: 22px;
-
 }
 
 .ContactsIMG {
   height: 80px;
   width: 80px;
-
 }
 
 .ContactsContent {
-
   font-family: Roboto;
   font-size: 24px;
   color: white;
   text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.5);
-
 }
 
 .ContactsContentTittle {
@@ -87,12 +66,153 @@
   margin-top: 15px;
   margin-bottom: 15px;
 }
-.Left .FirstBlock{
+
+.Left .FirstBlock {
   background: #018935;
 }
-.Right .FirstBlock{
+
+.Right .FirstBlock {
   background: #01752d;
 }
-.Left .SecondBlock{
+
+.Left .SecondBlock {
   background: #01963a;
+}
+
+.map-iframe {
+  width: 100%;
+  height: 100%;
+}
+.BlockContacts {
+    margin-left: auto;
+    margin-right: auto;
+  margin-top: 30px;
+  background: #008433;
+  display: flex;
+  min-height: 600px;
+  width: calc(100% - 15px); 
+}
+
+
+@media (max-width: 1200px) {
+  .BlockContacts {
+    height: auto;
+    min-height: 600px;
+  }
+  
+  .LeftBlockContacts {
+    flex-direction: row;
+    flex-wrap: wrap;
+  }
+  
+  .Left, .Right {
+    flex: 1 1 50%;
+    min-height: 300px;
+  }
+}
+
+
+@media (max-width: 768px) {
+  .container {
+    padding-left: 0px;padding-right: 0px;
+  }
+  .BlockContacts {
+    margin-left: 0;
+    width: 100%;
+    flex-direction: column;
+  }
+  
+  .Block {
+
+    margin-top: 30px;
+  }
+
+  .BlockContacts {
+    margin-left: 0;
+    height: auto;
+    flex-direction: column;
+    margin-top: 20px;
+  }
+
+  .LeftBlockContacts {
+    flex-direction: column;
+  }
+
+  .RightBlockContacts {
+    order: 1;
+    padding: 10px;
+  }
+
+  .Left, .Right {
+    flex-direction: row;
+    flex-wrap: wrap;
+    flex: 1 1 100%;
+  }
+
+  .FirstBlock, .SecondBlock {
+    flex: 1 1 50%;
+    min-height: 200px;
+    padding: 15px;
+    box-sizing: border-box;
+  }
+
+  .ContactsIMG {
+    height: 50px;
+    width: 50px;
+  }
+
+  .ContactsContent {
+    font-size: 16px;
+  }
+
+  .ContactsContentTittle {
+    font-size: 20px;
+    margin-top: 10px;
+    margin-bottom: 10px;
+  }
+
+  .contact-person-title {
+    font-size: 20px !important;
+  }
+
+  .contact-person-name {
+    font-size: 18px !important;
+    margin-top: 15px !important;
+  }
+
+  .map-iframe {
+    height: 300px;
+  }
+
+  .TittleHome {
+    width: 100% !important;
+    font-size: 24px;
+    text-align: center;
+  }
+
+  .Stip {
+    width: 100% !important;
+  }
+}
+
+@media (max-width: 480px) {
+  .FirstBlock, .SecondBlock {
+    flex: 1 1 100%;
+  }
+
+  .ContactsContent {
+    font-size: 14px;
+  }
+
+  .ContactsContentTittle {
+    font-size: 18px;
+  }
+
+  .contact-person-title {
+    font-size: 18px !important;
+  }
+
+  .contact-person-name {
+    font-size: 16px !important;
+  }
 }

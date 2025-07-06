@@ -1,24 +1,18 @@
 import React from 'react';
 import '../../styles/contacts.css';
-import Geo from '../../components/Iconss/geo.png'
-import Mail from '../../components/Iconss/mail.png'
-import Mobile from '../../components/Iconss/phone.png'
+
+import Geo from '../../components/Iconss/geo.png';
+import Mail from '../../components/Iconss/mail.png';
+import Mobile from '../../components/Iconss/phone.png';
 
 const Contacts = () => {
   return (
     <div className='home'>
-
-      {/* <div className="FlexEnd" style={{ paddingRight: 60 }}>
-        <div className="BlockTittleHome">
-          <span className='VT'>Контакты</span>
-
-        </div>
-      </div> */}
       <div className="Block">
         <div className="FlexCenter">
           <div className="BlockTittleHome">
-            <span className='TittleHome' style={{ width: "80%" }}>Контакты для связи с кафедрой!</span>
-            <div className="Stip" style={{ width: "80%" }}></div>
+            <span className='TittleHome'>Контакты для связи с кафедрой!</span>
+            <div className="Stip"></div>
           </div>
         </div>
         <div className="BlockContacts">
@@ -32,12 +26,10 @@ const Contacts = () => {
                 </div>
               </div>
               <div className="SecondBlock">
-
                 <div className="ContactsInfo">
                   <img src={Mail} alt="" className='ContactsIMG' />
                   <p className='ContactsContentTittle'>Почта:</p>
                   <p className='ContactsContent'>VT@sbmpei.ru</p>
-
                 </div>
               </div>
             </div>
@@ -51,24 +43,25 @@ const Contacts = () => {
                 </div>
               </div>
               <div className="SecondBlock">
-                <div className="ContactsInfo" style={{ alignItems: "start" }}>
-
-                  <p style={{ fontSize: 34 }} className=''><strong>Контакное лицо</strong></p>
-                  <p className='ContactsContent' style={{ fontSize: 32, marginTop: 30 }}>Ольшевская<br />
+                <div className="ContactsInfo contact-person">
+                  <p className='contact-person-title'><strong>Контактное лицо</strong></p>
+                  <p className='ContactsContent contact-person-name'>Ольшевская<br />
                     Ирина Николаевна</p>
                 </div>
               </div>
             </div>
           </div>
           <div className="RightBlockContacts">
-            <iframe title='Расположение кафедры ВТ' src="https://yandex.ru/map-widget/v1/?um=constructor%3A248f63b372de498e9051cbf8be2b3ed6f0e20425851ee1dd481c97e2becd51c9&amp;source=constructor" width="690" height="600" frameborder="0"></iframe>
+            <iframe 
+              src="https://yandex.ru/map-widget/v1/?um=constructor%3A248f63b372de498e9051cbf8be2b3ed6f0e20425851ee1dd481c97e2becd51c9&amp;source=constructor" 
+              title="Карта расположения"
+              className="map-iframe" 
+            ></iframe>
           </div>
         </div>
       </div>
-
-
     </div>
+  );
+};
 
-  )
-}
 export default Contacts;

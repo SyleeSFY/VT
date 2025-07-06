@@ -12,7 +12,6 @@ const Footer = () => {
 
 
 
-                хуй
             </div>
 
             <div className="footer-bottom">

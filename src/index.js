@@ -17,7 +17,7 @@ root.render(
           <App />
 
       </div>
-      <Footer />
+      {/* <Footer /> */}
     </div>
   </BrowserRouter>
 );
