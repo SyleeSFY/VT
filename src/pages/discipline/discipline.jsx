@@ -1,6 +1,5 @@
 import React, { useState, useEffect } from 'react';
 import '../../styles/dicipline.css';
-import { MdMargin } from 'react-icons/md';
 
 const bachelorDisciplines = [
   { id: 1, name: "Иностранный язык", course: 1, as: "+", vm: "+", po: "+" },
@@ -75,6 +74,8 @@ const magistracyDisciplines = [
 ];
 
 const Educator = () => {
+  
+  // eslint-disable-next-line no-unused-vars
   const [loaded, setLoaded] = useState(false);
   const [activeTable, setActiveTable] = useState('bachelor');
 
@@ -140,7 +141,7 @@ const Educator = () => {
                 <tr 
                   key={discipline.id} 
                   className={getRowClassName(discipline, index, bachelorDisciplines)}
-                  style={ (discipline.course == 1 || discipline.course == 3) ? {background:'none'} : {background:'none'}}
+                  style={ (discipline.course === 1 || discipline.course === 3) ? {background:'none'} : {background:'none'}}
                 >
                   <td>{discipline.id}</td>
                   <td style={{textAlign:'left'}}>{discipline.name}</td>
@@ -171,7 +172,7 @@ const Educator = () => {
                 <tr 
                   key={discipline.id} 
                   className={getRowClassName(discipline, index, magistracyDisciplines)}
-                  style={ (discipline.course == 1) ? {background:'none'} : {background:'none'}}
+                  style={ (discipline.course === 1) ? {background:'none'} : {background:'none'}}
                 >
                   <td>{discipline.id}</td>
                   <td style={{textAlign:'left'}}>{discipline.name}</td>
