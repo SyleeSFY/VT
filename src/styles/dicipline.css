@@ -1,0 +1,143 @@
+.course-divider td {
+  border-bottom: 2px solid #000 !important;
+}
+
+.table_tr{
+    font-family: Rubik;
+    font-weight: lighter;
+    font-size: 24px;
+    background: #006928d8;
+    color: white;
+}
+.block{
+    display: flex;
+    margin-top: 30px;
+}
+.center{
+    margin-left: auto;
+    margin-right: auto;
+}
+.gap{
+    gap: 20px;
+}
+
+.button_with_under_stick{
+    font-family: "Roboto", sans-serif;
+    font-size: 36px;
+    border: none;
+    background: none;
+}
+
+.button_with_under_stick.active {
+    border-bottom: 2px solid #009639;
+}
+
+.table-container{
+    display: flex;
+    margin: 20px 0;
+    overflow-x: auto;
+}
+
+table, th, td {
+    border: 1px solid black;
+    border-collapse: collapse;
+    text-align: center;
+}
+
+td{
+    font-family: "Roboto", sans-serif;
+}
+
+th{
+    text-align: center;
+    font-weight: normal;
+}
+
+.disciplines-table{
+    margin-left: auto;
+    margin-right: auto;
+    border: solid 2px black;
+    width: 100%;
+    table-layout: fixed; 
+}
+
+/* Ширины для колонок бакалавриата */
+.disciplines-table th:nth-child(1), 
+.disciplines-table td:nth-child(1) {
+    width: 5%; /* № п.п. */
+}
+
+.disciplines-table th:nth-child(2), 
+.disciplines-table td:nth-child(2) {
+    width: 60%;
+    padding-left: 15px;
+}
+
+.disciplines-table th:nth-child(3), 
+.disciplines-table td:nth-child(3) {
+    width: 5%; /* Курс */
+}
+
+.disciplines-table th:nth-child(4), 
+.disciplines-table td:nth-child(4) {
+    width: 10%; /* АС */
+}
+
+.disciplines-table th:nth-child(5), 
+.disciplines-table td:nth-child(5) {
+    width: 10%; /* ВМ */
+}
+
+.disciplines-table th:nth-child(6), 
+.disciplines-table td:nth-child(6) {
+    width: 10%; /* ПО */
+}
+
+/* Ширины для колонок магистратуры */
+.disciplines-table th:nth-child(1):only-child, 
+.disciplines-table td:nth-child(1):only-child {
+    width: 10%; /* № п/п */
+}
+
+.disciplines-table th:nth-child(2):only-child, 
+.disciplines-table td:nth-child(2):only-child {
+    width: 70%; /* Наименование дисциплины */
+    text-align: left;
+    padding-left: 15px;
+}
+
+.disciplines-table th:nth-child(3):only-child, 
+.disciplines-table td:nth-child(3):only-child {
+    width: 20%; /* Курс */
+}
+
+.disciplines-table th {
+    padding: 12px 8px;
+}
+
+.disciplines-table td {
+    padding: 10px 8px;
+    vertical-align: middle;
+}
+
+.disciplines-table tbody tr:hover {
+  background-color: #f5f5f5 !important;
+}
+
+
+/* Для мобильных устройств */
+@media (max-width: 768px) {
+    .disciplines-table {
+        font-size: 12px;
+        table-layout: auto;
+    }
+    
+    .disciplines-table th,
+    .disciplines-table td {
+        padding: 6px 4px;
+    }
+    
+    .button_with_under_stick {
+        font-size: 24px;
+    }
+}

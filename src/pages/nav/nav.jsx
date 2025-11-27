@@ -21,6 +21,9 @@ const Nav = () => {
                     <Link to="/" className="NavLink"> 
                         <li className='NavItem Cursor'>О КАФЕДРЕ</li>
                     </Link>
+                    <Link to="/discipline" className="NavLink"> 
+                        <li className='NavItem Cursor'>ДИСЦИПЛИНЫ</li>
+                    </Link>
                     <Link to="/educator" className="NavLink"> 
                         <li className='NavItem Cursor'>ПРЕПОДАВАТЕЛИ И СОТРУДНИКИ</li>
                     </Link>

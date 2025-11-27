@@ -12,6 +12,7 @@
     color: white;
     padding: 5px 5px;
     display: inline-block;
+    white-space: nowrap;
 }
 
 .InfoCafedra {
