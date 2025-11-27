@@ -7,6 +7,10 @@ import { FaBars, FaTimes } from 'react-icons/fa';
 const Nav = () => {
     const [isMenuOpen, setIsMenuOpen] = useState(false);
 
+    const handleLinkClick = () => {
+        setIsMenuOpen(false);
+    };
+
     return (
         <nav className='NavBar'>
             <img src={NavBarImage} alt="Логотип кафедры" className='NavBarIMG' />
@@ -18,16 +22,16 @@ const Nav = () => {
 
             <nav className={`NavMenu ${isMenuOpen ? 'mobile-open' : ''}`}>
                 <ul className='Navli'>
-                    <Link to="/" className="NavLink"> 
+                    <Link to="/" className="NavLink" onClick={handleLinkClick}> 
                         <li className='NavItem Cursor'>О КАФЕДРЕ</li>
                     </Link>
-                    <Link to="/discipline" className="NavLink"> 
+                    <Link to="/discipline" className="NavLink" onClick={handleLinkClick}> 
                         <li className='NavItem Cursor'>ДИСЦИПЛИНЫ</li>
                     </Link>
-                    <Link to="/educator" className="NavLink"> 
+                    <Link to="/educator" className="NavLink" onClick={handleLinkClick}> 
                         <li className='NavItem Cursor'>ПРЕПОДАВАТЕЛИ И СОТРУДНИКИ</li>
                     </Link>
-                    <Link to="/contacts" className="NavLink"> 
+                    <Link to="/contacts" className="NavLink" onClick={handleLinkClick}> 
                         <li className='NavItem Cursor'>КОНТАКТЫ</li>
                     </Link>
                 </ul>
