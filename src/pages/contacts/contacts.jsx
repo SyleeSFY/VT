@@ -11,7 +11,7 @@ const Contacts = () => {
       <div className="Block">
         <div className="FlexCenter">
           <div className="BlockTittleHome">
-            <span className='TittleHome'>Контакты для связи с кафедрой!</span>
+            <span className='TittleHome'>Контакты для связи!</span>
             <div className="Stip"></div>
           </div>
         </div>
