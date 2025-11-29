@@ -106,6 +106,7 @@
 
 @media (max-width: 480px) {
     .NavItem {
-        font-size: 16px;
+        white-space: nowrap;
+        font-size: 14px;
     }
 }

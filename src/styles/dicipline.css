@@ -75,22 +75,23 @@ th{
 
 .disciplines-table th:nth-child(3), 
 .disciplines-table td:nth-child(3) {
-    width: 5%; /* Курс */
+    width: 10%; /* Курс */
 }
+
 
 .disciplines-table th:nth-child(4), 
 .disciplines-table td:nth-child(4) {
-    width: 10%; /* АС */
+    width: 20%; /* АС */
 }
 
 .disciplines-table th:nth-child(5), 
 .disciplines-table td:nth-child(5) {
-    width: 10%; /* ВМ */
+    width: 20%; /* ВМ */
 }
 
 .disciplines-table th:nth-child(6), 
 .disciplines-table td:nth-child(6) {
-    width: 10%; /* ПО */
+    width: 20%; /* ПО */
 }
 
 /* Ширины для колонок магистратуры */
@@ -111,6 +112,13 @@ th{
     width: 20%; /* Курс */
 }
 
+.disciplines-table td:nth-child(4),
+.disciplines-table td:nth-child(5),
+.disciplines-table td:nth-child(6) {
+    text-align: center !important;
+    vertical-align: middle !important;
+}
+
 .disciplines-table th {
     padding: 12px 8px;
 }
@@ -124,6 +132,11 @@ th{
   background-color: #f5f5f5 !important;
 }
 
+@media (max-width: 370px) {
+        .button_with_under_stick {
+        font-size: 16px !important;
+    }
+}
 
 /* Для мобильных устройств */
 @media (max-width: 768px) {
@@ -139,5 +152,10 @@ th{
     
     .button_with_under_stick {
         font-size: 24px;
+    }
+}
+@media (max-width: 260px) {
+    .button_with_under_stick {
+        font-size: 14px !important;
     }
 }

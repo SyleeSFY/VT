@@ -318,6 +318,8 @@
 @media (max-width: 450px) {
     .VT {
         font-size: 21px;
+        white-space: normal;
+
     }
 
     .CafedraCard>p {
