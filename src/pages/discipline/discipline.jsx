@@ -128,9 +128,12 @@ const Educator = () => {
           <table className="disciplines-table">
             <thead>
               <tr className='table_tr'>
-                <th>№<br/>п/п</th>
-                <th>Наименование дисциплины</th>
-                <th>Курс</th>
+                <th rowSpan="2">№<br/>п/п</th>
+                <th rowSpan="2">Наименование дисциплины</th>
+                <th rowSpan="2">Курс</th>
+                <th colSpan="3" className="profile-header">Профиль подготовки</th>
+              </tr>
+              <tr className='table_tr'>
                 <th>АС</th>
                 <th>ВМ</th>
                 <th>ПО</th>

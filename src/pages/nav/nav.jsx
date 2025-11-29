@@ -23,7 +23,7 @@ const Nav = () => {
             <nav className={`NavMenu ${isMenuOpen ? 'mobile-open' : ''}`}>
                 <ul className='Navli'>
                     <Link to="/" className="NavLink" onClick={handleLinkClick}> 
-                        <li className='NavItem Cursor'>О КАФЕДРЕ</li>
+                        <li className='NavItem Cursor'>КАФЕДРА</li>
                     </Link>
                     <Link to="/discipline" className="NavLink" onClick={handleLinkClick}> 
                         <li className='NavItem Cursor'>ДИСЦИПЛИНЫ</li>
